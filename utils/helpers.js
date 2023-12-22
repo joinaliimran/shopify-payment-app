@@ -10,7 +10,7 @@ const getShopifyInstance = () => {
     apiKey: process.env.SHOPIFY_API_KEY,
     apiSecretKey: process.env.SHOPIFY_CLIENT_SECRET,
     scopes: process.env.SHOPIFY_API_SCOPES.split(","),
-    hostName: `${process.env.HOST}:8080`,
+    hostName: `${process.env.HOST}:${process.env.PORT}`,
     hostScheme: process.env.SHOPIFY_PROTOCOL,
     apiVersion: ApiVersion.October23,
     isEmbeddedApp: false,

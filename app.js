@@ -106,7 +106,7 @@ app.get(
         email: "ali.imran@codedistrict.com",
         line_items: [
           {
-            variant_id: 42665062596799,
+            variant_id: process.env.SHOPIFY_DOLLAR_ONE_PRODUCT_VARIANT_ID,
             quantity: 10,
           },
         ],
